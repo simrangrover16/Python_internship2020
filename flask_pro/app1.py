@@ -12,6 +12,12 @@ def home():
     return "hello to my home"
 
 @app.route("/hello/")
+def hello():
     return "Python is supernice"
+
+
+@app.route("/login/")
+def login():
+    return "Login file"
 
 app.run(debug=True)
